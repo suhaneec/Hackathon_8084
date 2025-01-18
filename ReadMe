@@ -1,0 +1,47 @@
+Term Deposit Subscription Prediction
+Project Overview
+This project focuses on predicting whether a client will subscribe to a term deposit based on a bank's telemarketing campaign data. The dataset consists of client attributes, campaign details, and previous marketing outcomes, and the target variable (y) indicates if the client subscribed (yes) or not (no). This predictive model aims to optimize telemarketing efforts by identifying potential subscribers.
+
+Dataset
+Train Dataset:
+Rows: 40,000
+Columns: 17 (including the target variable y)
+Test Dataset:
+Rows: 5,211
+Columns: 16 (excluding the target variable y)
+Target Variable:
+y: Binary variable indicating subscription (yes or no).
+Key Features:
+Client Attributes: Age, job, marital status, education, etc.
+Campaign Details: Duration of last contact, number of contacts, and days since the last contact.
+Historical Features: Outcome of previous campaigns and average yearly balance.
+Approach
+1. Data Preprocessing
+Handled missing values and transformed categorical variables using one-hot encoding.
+Converted pdays into a binary variable (was_contacted) indicating whether the client was previously contacted.
+Standardized numerical features like age, balance, and duration.
+2. Exploratory Data Analysis (EDA)
+Univariate Analysis:
+Visualized distributions of numerical features (e.g., age, balance) using histograms.
+Examined frequencies of categorical variables (e.g., job, education) with bar plots.
+Bivariate Analysis:
+Analyzed relationships between features and the target variable (y) using box plots and stacked bar charts.
+Correlation Analysis:
+Created a heatmap for numerical variables, identifying duration as a critical feature influencing y.
+3. Handling Class Imbalance
+The dataset was imbalanced, with fewer clients subscribing (yes).
+Applied SMOTE (Synthetic Minority Oversampling Technique) to oversample the minority class, ensuring a balanced dataset for model training.
+4. Model Selection
+Used XGBoost for its robustness, ability to handle mixed data types, and high performance in classification tasks.
+Key hyperparameters:
+max_depth=5, learning_rate=0.1, n_estimators=100
+5. Validation
+Split the training dataset into train and validation sets.
+Achieved an F1 score of 64% on the validation set.
+6. Test Predictions
+Generated predictions on the test dataset and saved the output in formatted_predictions.csv.
+Output
+Validation Results:
+Achieved balanced performance with a focus on improving recall for the minority class.
+Test Results:
+Output predictions saved in formatted_predictions.csv with an additional y column indicating the subscription status (yes or no).
