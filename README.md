@@ -53,7 +53,6 @@ The dataset captures:
 ## **🌟 Results**
 
 - **Key Metric**: Achieved a strong **F1 Score** 🔢.
-- **Predictions**: [Download the prediction CSV](#).
 - **Insights Report**: Packed with visuals and trends 📊.
 
 ---
@@ -64,30 +63,6 @@ By focusing on likely subscribers, banks can:
 - 💰 **Save money** on unnecessary calls.
 - 😊 **Improve customer satisfaction**.
 - 📈 **Boost success rates** of marketing campaigns.
-
----
-
-## **🔧 How to Use**
-
-1. **🚀 Get Started**  
-   - Clone the repo:
-     ```bash
-     git clone https://github.com/your-repo-url.git
-     cd your-repo-url
-     ```
-   - Install the tools:
-     ```bash
-     pip install -r requirements.txt
-     ```
-   - Explore the data and results:
-     ```bash
-     jupyter notebook
-     ```
-
-2. **🌐 Submit Your Results**  
-   - Save predictions in the required format.
-   - Upload to the submission platform.
-   - Check your leaderboard rank and metrics 📊.
 
 ---
 
